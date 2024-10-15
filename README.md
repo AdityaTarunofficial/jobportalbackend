@@ -1,51 +1,46 @@
-# Job Portal Application
+💼 Job Portal Application
+Overview
+The Job Portal Application is a full-stack web platform designed to connect job seekers with employers. The app is divided into two parts:
 
-## Overview
-The Job Portal Application is a full-stack web application that connects job seekers with potential employers. Users can register, log in, apply for jobs, and manage their profiles. Employers can post jobs and manage applications.
+Frontend: A sleek React-based user interface for interacting with the application.
+Backend: A Node.js-powered server that handles data storage, authentication, and APIs.
 
-## Technologies Used
-- **Frontend**: 
-  - React
-  - Axios for API requests
-  - React Router for navigation
-  - Bootstrap for styling
-- **Backend**: 
-  - Node.js
-  - Express
-  - MongoDB for database management
-- **Deployment**: 
-  - Render (for backend)
-  - Netlify (for frontend)
 
-## Features
-- User Authentication:
-  - Registration and login for job seekers.
-  - Secure password storage and management.
-  
-- Job Management:
-  - Employers can create, read, update, and delete job listings.
-  - Job seekers can view job listings and apply directly through the platform.
+⚙️ Backend
+Overview
+The backend of the Job Portal is built using Node.js, Express, and MongoDB. It provides RESTful APIs for managing users, jobs, and authentication, serving as the core for all business logic and data management.
 
-- Profile Management:
-  - Users can view and edit their profiles.
-  - Option to upload a profile picture.
+🛠️ Key Technologies
+Node.js: Asynchronous JavaScript runtime to handle server operations efficiently.
+Express.js: Lightweight framework for building RESTful APIs.
+MongoDB: A NoSQL database used for storing job listings, user profiles, and applications.
+JWT (JSON Web Tokens): Secures the authentication flow, ensuring protected routes.
+Mongoose: MongoDB object modeling for schema definition and database interaction.
+📂 Folder Structure:
+graphql
+backend/
+├── controllers/   # Contains logic for user and job actions
+├── models/        # Mongoose models for User, Job, etc.
+├── routes/        # Defines the API routes
+├── middleware/    # Authentication middleware (JWT)
+├── server.js      # Main server file
+🚀 Getting Started with the Backend
+Prerequisites:
+Node.js installed on your machine.
+A MongoDB database (local or cloud).
+Steps:
+Install Dependencies
 
-- Applied Jobs Tracking:
-  - Users can view jobs they have applied for.
-  - Ability to reject applications.
+bash
+cd backend
+npm install
+Environment Variables Create a .env file in the backend directory:
 
-- Responsive Design:
-  - User-friendly interface that works on both desktop and mobile devices.
+env
+MONGODB_URI=<Your MongoDB Connection URI>
+JWT_SECRET=<Your Secret Key for JWT>
+Run the Server
 
-## Getting Started
-
-### Prerequisites
-- Node.js installed on your machine.
-- MongoDB database setup.
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/job-portal.git
-   cd job-portal
+bash
+npm start
+API Documentation The backend exposes REST APIs for managing jobs, user profiles, and authentication. Refer to the /api routes for further details.
