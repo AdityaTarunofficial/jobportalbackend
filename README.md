@@ -48,3 +48,19 @@ The **backend** of the Job Portal is built using **Node.js**, **Express**, and *
    ```bash
    git clone https://github.com/yourusername/job-portal-backend.git
    cd job-portal-backend
+2.Install dependencies:
+
+    bash
+    npm install
+    
+3.Create a .env file with the following variables:
+
+    bash
+    MONGO_URI=your_mongodb_uri
+    JWT_SECRET=your_secret_key
+
+4.Run the server:
+
+    bash
+    npm start
+    The backend will run on http://localhost:5000.
