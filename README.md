@@ -55,7 +55,6 @@ The **backend** of the Job Portal is built using **Node.js**, **Express**, and *
     
 3.Create a .env file with the following variables:
 
-    bash
     MONGO_URI=your_mongodb_uri
     JWT_SECRET=your_secret_key
 
